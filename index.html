@@ -105,8 +105,8 @@
         <script>
         var date1 = new Date();
         var date2 = new Date("09/10/2015");
-        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-        var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)).toString();
+        var timeDiff = date2 - date1
+        var diffDays = Math.round(timeDiff * (1.15740741 * 0.00000001));
         console.log(diffDays);
         var firstLetter  = '',
             secondLetter = '';
